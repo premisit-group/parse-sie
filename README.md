@@ -1,4 +1,6 @@
-# parse-sie (fork)
+# parse-sie
+
+(Fork)
 
 This Python script can parse a [SIE file](http://www.sie.se/) . SIE is a Swedish standard file format for transfering economical data.
 
