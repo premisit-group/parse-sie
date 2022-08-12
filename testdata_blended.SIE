@@ -1,0 +1,35 @@
+#FLAGGA		0
+#PROGRAM	"Accounting companies"	98.2
+#FORMAT		PC8
+#GEN		2020715	"SE"
+#SIETYP		4
+
+#FNAMN	 "Company SIE test"
+#FNR C:\ANNA\DEBUG\FTG20
+#ORGNR 700510-2723
+#ADRESS "Kirunavägen 22" "-" "Skåne" "-"
+
+#RAR 0 19950101 19951231
+#RAR -1 19940101 19941231
+
+#KONTO	1010	"Kassa"
+#KONTO	1050	"Bank"
+#KONTO	1080	"Test"
+#KONTO	1110	"Test2"
+
+#OBJEKT 1 "11" "Norrkoping"
+
+#IB -1  1010  10000.00
+#IB 0   1010  4000.0
+#UB -1  1010  -2754.55
+#IB -1  1050  -2754.55
+#UB -2  1052  800.00
+
+#SRU	1010	200
+#SRU	1050	201
+
+#VER	"A"	1	19940630	"period fond tax 95"
+{
+	#TRANS	2855	{}	    -41000.00
+	#TRANS	8871	{}	     41000.00
+}
