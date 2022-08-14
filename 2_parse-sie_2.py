@@ -5,6 +5,13 @@ import datetime
 
 # -------------------------------------------------------------------------
 # Description
+#
+# -------------------
+# About argparse
+# -------------------
+# Argparse solely purpose is to facilitatet that argument from a
+# command-line-triggered, python script, parser the argument thus makes it
+# possible from terminal to send in arguments used by the script.
 # -------------------------------------------------------------------------
 
 def main():
@@ -18,7 +25,7 @@ def main():
         '--filename', type=argparse.FileType('r'), required=True, nargs='+'
     )
     parser.add_argument(
-        '--encoding', default='cp850',
+        '--encoding', default='utf-8',
         choices=['cp850', 'latin-1', 'utf-8', 'windows-1252']
     )
 
@@ -48,6 +55,7 @@ def main():
         '8': '8 - Finansiella och andra inkomster/intäkter och utgifter/kostnader'
     }
 
+    print(account_group)
 
 # Secures that function main is being run.
 
