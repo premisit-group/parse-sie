@@ -5,12 +5,13 @@ import datetime
 
 # -------------------------------------------------------------------------
 # Description
+# -------------------------------------------------------------------------
 #
 # -------------------
 # About argparse
 # -------------------
-# Argparse solely purpose is to facilitatet that argument from a
-# command-line-triggered, python script, parser the argument thus makes it
+# Argparse solely purpose is to facilitate that argument from a
+# command-line-triggered python script, parses the argument thus makes it
 # possible from terminal to send in arguments used by the script.
 # -------------------------------------------------------------------------
 
@@ -56,6 +57,23 @@ def main():
     }
 
     print(account_group)
+
+    # Empty output_file. If there are arguments open args.output in write mode.
+
+    output_file = None
+    
+    if args.output:
+        output_file = open(args.output, 'w')
+    
+    # Creata an empty data list and append titles.
+    
+    data = []
+    
+    data.append(list(
+        ["Date", "DateMonth", "Account", "Account group", "Account name", "Kst", 
+        "Proj", "Amount", "Text", "Verification", "DateKey", "Company"])
+    )
+
 
 # Secures that function main is being run.
 
